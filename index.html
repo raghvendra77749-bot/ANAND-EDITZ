@@ -3,38 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAGHAV EDITZ | Portfolio</title>
+    <title>RAGHAV EDITZ | Official Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #050505; color: #ffffff; font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .glass { background: rgba(20, 20, 20, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .aesthetic-gradient { background: linear-gradient(135deg, #00dbde 0%, #fc00ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .glow:hover { box-shadow: 0 0 20px rgba(252, 0, 255, 0.4); transform: scale(1.02); transition: 0.3s; }
+        body { background-color: #030303; color: white; font-family: 'Inter', sans-serif; }
+        .heading-font { font-family: 'Syncopate', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
+        .video-container iframe { width: 100%; height: 100%; border-radius: 15px; }
+        .neon-border { border-bottom: 2px solid #ff0055; box-shadow: 0 4px 15px -5px #ff0055; }
     </style>
 </head>
-<body>
+<body class="pb-20">
 
-    <nav class="fixed top-5 w-full z-50 px-6">
-        <div class="max-w-4xl mx-auto flex justify-between items-center glass px-6 py-3 rounded-2xl">
-            <div class="text-xl font-extrabold tracking-tighter">RAGHAV<span class="text-pink-500">EDITZ</span></div>
-            <a href="https://wa.me/916375097947" class="bg-white text-black px-5 py-2 rounded-xl text-sm font-bold">Hire Me</a>
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <h1 class="heading-font text-2xl tracking-tighter">RAGHAV<span class="text-pink-600">.EDITZ</span></h1>
+        <div class="flex gap-4">
+            <a href="https://wa.me/916375097947" class="glass px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition">Contact</a>
         </div>
     </nav>
 
-    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tighter">
-            NEXT LEVEL <br> <span class="aesthetic-gradient">VISUALS.</span>
-        </h1>
-        <p class="text-zinc-400 text-lg mb-10 max-w-lg">Professional Video Editor & Thumbnail Designer. Bringing your imagination to life.</p>
-        <div class="flex gap-4">
-            <a href="#work" class="glass px-8 py-3 rounded-xl font-bold glow">My Work</a>
-            <a href="https://instagram.com/RAGHV_EDITZ" class="bg-pink-600 px-8 py-3 rounded-xl font-bold glow">Instagram</a>
+    <div class="text-center py-20">
+        <h2 class="heading-font text-5xl md:text-7xl mb-4">PORTFOLIO</h2>
+        <p class="text-zinc-500 uppercase tracking-[0.5em] text-sm">Video Editor & Graphic Designer</p>
+    </div>
+
+    <section class="max-w-7xl mx-auto px-6 mb-24">
+        <h3 class="text-2xl font-bold mb-8 neon-border inline-block">VIDEO PROJECTS</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="glass p-3 rounded-3xl">
+                <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-900">
+                    <iframe src="https://www.youtube.com/embed/YOUR_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="mt-4 font-bold text-center uppercase text-xs tracking-widest text-zinc-400">Cinematic Edit</p>
+            </div>
+
+            <div class="glass p-3 rounded-3xl max-w-[300px] mx-auto">
+                <div class="aspect-[9/16] rounded-2xl overflow-hidden bg-zinc-900">
+                    <iframe src="https://www.youtube.com/embed/YOUR_REEL_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="mt-4 font-bold text-center uppercase text-xs tracking-widest text-zinc-400">Short Form / Reel</p>
+            </div>
+
         </div>
     </section>
 
-    <section id="work" class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-10 border-l-4 border-pink-500 pl-4">Featured Edits</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="glass rounded-3xl overflow-hidden group
+    <section class="max-w-7xl mx-auto px-6">
+        <h3 class="text-2xl font-bold mb-8 neon-border inline-block">DESIGNS & THUMBNAILS</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <div class="group relative overflow-hidden rounded-xl glass p-2 hover:border-pink-500 transition">
+                <img src="https://via.placeholder.com/1280x720/111/fff?text=Thumbnail+1" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-500">
+                <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition">
+                    <span class="bg-black/80 px-3 py-1 rounded text-[10px] font-bold tracking-tighter">GAMING</span>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl glass p-2 hover:border-blue-500 transition col-span-1">
+                <img src="https://via.placeholder.com/1080x1350/111/fff?text=Poster+Design" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-500">
+            </div>
+
+        </div>
+    </section>
+
+    <div class="mt-32 text-center">
+        <a href="https://instagram.com/RAGHV_EDITZ" class="heading-font text-xl hover:text-pink-500 transition">@RAGHV_EDITZ</a>
+    </div>
+
+</body>
+</html>
