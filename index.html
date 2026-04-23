@@ -3,59 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anand GFX | Portfolio</title>
+    <title>RAGHAV EDITZ | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #0a0a0a; color: #ffffff; font-family: 'Inter', sans-serif; }
-        .gradient-text { background: linear-gradient(90deg, #ff00cc, #3333ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card-hover:hover { transform: translateY(-10px); transition: 0.3s ease; box-shadow: 0 10px 30px rgba(255, 0, 204, 0.2); }
+        body { background-color: #050505; color: #ffffff; font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(20, 20, 20, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .aesthetic-gradient { background: linear-gradient(135deg, #00dbde 0%, #fc00ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glow:hover { box-shadow: 0 0 20px rgba(252, 0, 255, 0.4); transform: scale(1.02); transition: 0.3s; }
     </style>
 </head>
 <body>
 
-    <header class="h-screen flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-6xl font-bold mb-4">I Create <span class="gradient-text">Visual Magic</span></h1>
-        <p class="text-gray-400 text-xl max-w-2xl">High-end Video Editing & Graphic Design for Creators and Brands.</p>
-        <div class="mt-8">
-            <a href="#work" class="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition">View My Work</a>
+    <nav class="fixed top-5 w-full z-50 px-6">
+        <div class="max-w-4xl mx-auto flex justify-between items-center glass px-6 py-3 rounded-2xl">
+            <div class="text-xl font-extrabold tracking-tighter">RAGHAV<span class="text-pink-500">EDITZ</span></div>
+            <a href="https://wa.me/916375097947" class="bg-white text-black px-5 py-2 rounded-xl text-sm font-bold">Hire Me</a>
         </div>
-    </header>
+    </nav>
 
-    <section id="work" class="py-20 px-8 max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold mb-12 border-l-4 border-pink-500 pl-4">Featured Video Edits</h2>
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tighter">
+            NEXT LEVEL <br> <span class="aesthetic-gradient">VISUALS.</span>
+        </h1>
+        <p class="text-zinc-400 text-lg mb-10 max-w-lg">Professional Video Editor & Thumbnail Designer. Bringing your imagination to life.</p>
+        <div class="flex gap-4">
+            <a href="#work" class="glass px-8 py-3 rounded-xl font-bold glow">My Work</a>
+            <a href="https://instagram.com/RAGHV_EDITZ" class="bg-pink-600 px-8 py-3 rounded-xl font-bold glow">Instagram</a>
+        </div>
+    </section>
+
+    <section id="work" class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 border-l-4 border-pink-500 pl-4">Featured Edits</h2>
+        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-zinc-900 rounded-xl overflow-hidden card-hover">
-                <div class="aspect-video">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="p-4">
-                    <h3 class="font-bold text-lg">Cinematic Montage</h3>
-                    <p class="text-gray-400 text-sm">Color Grading & Sound Design</p>
-                </div>
-            </div>
-            </div>
-    </section>
-
-    <section class="py-20 px-8 max-w-6xl mx-auto bg-zinc-900/50 rounded-3xl">
-        <h2 class="text-4xl font-bold mb-12 border-l-4 border-blue-500 pl-4">Thumbnails & Graphics</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="group relative overflow-hidden rounded-lg cursor-pointer">
-                <img src="https://via.placeholder.com/600x337" alt="Thumbnail" class="w-full transition group-hover:scale-110">
-                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
-                    <p class="font-bold">Gaming Thumbnail</p>
-                </div>
-            </div>
-            </div>
-    </section>
-
-    <footer class="py-20 text-center">
-        <h2 class="text-3xl font-bold mb-6">Let's Work Together</h2>
-        <p class="text-gray-400 mb-8">Ready to take your content to the next level?</p>
-        <div class="flex justify-center gap-6">
-            <a href="https://instagram.com" class="text-pink-500 font-bold">Instagram</a>
-            <a href="https://wa.me/yournumber" class="text-green-500 font-bold">WhatsApp</a>
-        </div>
-    </footer>
-
-</body>
-</html>
+            <div class="glass rounded-3xl overflow-hidden group
