@@ -1,103 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Anand Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anand Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: #0f172a;
-      color: white;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
 
-    header {
-      text-align: center;
-      padding: 50px;
-      background: #1e293b;
-    }
+body {
+  background: #0f172a;
+  color: white;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 40px;
-    }
+/* HEADER */
+header {
+  background: url('images/cover.jpg') center/cover no-repeat;
+  text-align: center;
+  padding: 80px 20px;
+}
 
-    section {
-      padding: 40px;
-      text-align: center;
-    }
+header img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
 
-    .projects {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
+header h1 {
+  margin-top: 15px;
+  font-size: 35px;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
-      width: 250px;
-    }
+header p {
+  opacity: 0.8;
+}
 
-    .btn {
-      background: red;
-      padding: 10px 20px;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+/* SECTION */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #1e293b;
-    }
-  </style>
+h2 {
+  margin-bottom: 20px;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* BUTTON */
+.btn {
+  background: red;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #1e293b;
+  padding: 20px;
+  text-align: center;
+}
+</style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
+  <img src="images/logo.png" alt="logo">
   <h1>Hi, I'm Anand 👋</h1>
   <p>Video Editor | Content Creator | Designer</p>
 </header>
 
+<!-- ABOUT -->
 <section>
   <h2>About Me</h2>
-  <p>I create engaging reels, thumbnails, and edits for social media.</p>
+  <p>I create viral reels, thumbnails, and professional edits for social media clients.</p>
 </section>
 
+<!-- PROJECTS -->
 <section>
-  <h2>My Projects</h2>
+  <h2>My Work</h2>
 
   <div class="projects">
     <div class="card">
       <h3>Gaming Reels</h3>
-      <p>Short viral gaming edits</p>
+      <p>High-quality viral gaming edits</p>
     </div>
 
     <div class="card">
       <h3>Logo Design</h3>
-      <p>Creative logo works</p>
+      <p>Modern and creative logos</p>
     </div>
 
     <div class="card">
       <h3>Client Work</h3>
-      <p>Edited videos for clients</p>
+      <p>Worked with multiple clients</p>
     </div>
   </div>
 </section>
 
+<!-- REEL SECTION -->
+<section>
+  <h2>My Reel</h2>
+
+  <iframe 
+    src="https://www.instagram.com/reel/REEL_LINK/embed"
+    width="300" height="500" frameborder="0">
+  </iframe>
+
+</section>
+
+<!-- CONTACT -->
 <section>
   <h2>Contact Me</h2>
   <p>Instagram: @anand_sensei_</p>
-  <button class="btn">DM Me</button>
+
+  <a href="https://www.instagram.com/anand_sensei_" target="_blank">
+    <button class="btn">DM Me</button>
+  </a>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2026 Anand Portfolio</p>
 </footer>
