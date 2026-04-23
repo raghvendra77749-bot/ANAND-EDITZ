@@ -1,156 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anand Portfolio</title>
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial;
-}
-
-body {
-  background: #0f172a;
-  color: white;
-}
-
-/* HEADER */
-header {
-  background: url('images/cover.jpg') center/cover no-repeat;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-header img {
-  width: 120px;
-  border-radius: 50%;
-  border: 3px solid white;
-}
-
-header h1 {
-  margin-top: 15px;
-  font-size: 35px;
-}
-
-header p {
-  opacity: 0.8;
-}
-
-/* SECTION */
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-/* PROJECTS */
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 10px;
-  width: 250px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-/* BUTTON */
-.btn {
-  background: red;
-  padding: 10px 20px;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* FOOTER */
-footer {
-  background: #1e293b;
-  padding: 20px;
-  text-align: center;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand GFX | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0a0a0a; color: #ffffff; font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(90deg, #ff00cc, #3333ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover:hover { transform: translateY(-10px); transition: 0.3s ease; box-shadow: 0 10px 30px rgba(255, 0, 204, 0.2); }
+    </style>
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header>
-  <img src="images/logo.png" alt="logo">
-  <h1>Hi, I'm Anand 👋</h1>
-  <p>Video Editor | Content Creator | Designer</p>
-</header>
+    <header class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-6xl font-bold mb-4">I Create <span class="gradient-text">Visual Magic</span></h1>
+        <p class="text-gray-400 text-xl max-w-2xl">High-end Video Editing & Graphic Design for Creators and Brands.</p>
+        <div class="mt-8">
+            <a href="#work" class="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition">View My Work</a>
+        </div>
+    </header>
 
-<!-- ABOUT -->
-<section>
-  <h2>About Me</h2>
-  <p>I create viral reels, thumbnails, and professional edits for social media clients.</p>
-</section>
+    <section id="work" class="py-20 px-8 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 border-l-4 border-pink-500 pl-4">Featured Video Edits</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-zinc-900 rounded-xl overflow-hidden card-hover">
+                <div class="aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg">Cinematic Montage</h3>
+                    <p class="text-gray-400 text-sm">Color Grading & Sound Design</p>
+                </div>
+            </div>
+            </div>
+    </section>
 
-<!-- PROJECTS -->
-<section>
-  <h2>My Work</h2>
+    <section class="py-20 px-8 max-w-6xl mx-auto bg-zinc-900/50 rounded-3xl">
+        <h2 class="text-4xl font-bold mb-12 border-l-4 border-blue-500 pl-4">Thumbnails & Graphics</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="group relative overflow-hidden rounded-lg cursor-pointer">
+                <img src="https://via.placeholder.com/600x337" alt="Thumbnail" class="w-full transition group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+                    <p class="font-bold">Gaming Thumbnail</p>
+                </div>
+            </div>
+            </div>
+    </section>
 
-  <div class="projects">
-    <div class="card">
-      <h3>Gaming Reels</h3>
-      <p>High-quality viral gaming edits</p>
-    </div>
-
-    <div class="card">
-      <h3>Logo Design</h3>
-      <p>Modern and creative logos</p>
-    </div>
-
-    <div class="card">
-      <h3>Client Work</h3>
-      <p>Worked with multiple clients</p>
-    </div>
-  </div>
-</section>
-
-<!-- REEL SECTION -->
-<section>
-  <h2>My Reel</h2>
-
-  <iframe 
-    src="https://www.instagram.com/reel/REEL_LINK/embed"
-    width="300" height="500" frameborder="0">
-  </iframe>
-
-</section>
-
-<!-- CONTACT -->
-<section>
-  <h2>Contact Me</h2>
-  <p>Instagram: @anand_sensei_</p>
-
-  <a href="https://www.instagram.com/anand_sensei_" target="_blank">
-    <button class="btn">DM Me</button>
-  </a>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Anand Portfolio</p>
-</footer>
+    <footer class="py-20 text-center">
+        <h2 class="text-3xl font-bold mb-6">Let's Work Together</h2>
+        <p class="text-gray-400 mb-8">Ready to take your content to the next level?</p>
+        <div class="flex justify-center gap-6">
+            <a href="https://instagram.com" class="text-pink-500 font-bold">Instagram</a>
+            <a href="https://wa.me/yournumber" class="text-green-500 font-bold">WhatsApp</a>
+        </div>
+    </footer>
 
 </body>
 </html>
